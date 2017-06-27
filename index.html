@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <h1>Lencitular Bears</h1>
+      <div id="lens-container">
+        <div id="lens-transform">
+          <canvas id="composite-canvas"></canvas>
+          <div class="slider"></div>
+        </div>
+      </div>
+      <div id="controls">
+        <button id="go">Play</button>
+        <button id="stop">Stop</button>
+        <br />
+        <br />
+        <label for="slider-opacity">Slider Opacity</label>
+        <input id="slider-opacity" type="range" min="0" max="10" step="0.1" value="10">
+        <br />
+        <label for="lenticular-thickness">Lenticular Thickness</label>
+        <input id="lenticular-thickness" type="range" min="1" max="10" step="1" value="1">
+        <br />
+        <label for="slider-animation-speed">Speed</label>
+        <input id="slider-animation-speed" type="range" min="1" max="20" step="0.01" value="20">
+      </div>
+      <h4>Bear Frames</h4>
+      <div id="image-selection">
+        <button data-function="odd">Odd</button>
+        <button data-function="even">Even</button>
+        <button data-function="every3rd">Every 3rd</button>
+        <button data-function="random">Random</button>
+        <button data-function="random5">Random 5</button>
+        <br />
+        <img class="off" src="frames/bear00000.jpg">
+        <img class="off" src="frames/bear00001.jpg">
+        <img class="on" src="frames/bear00002.jpg">
+        <img class="on" src="frames/bear00003.jpg">
+        <img class="on" src="frames/bear00004.jpg">
+        <img class="off" src="frames/bear00005.jpg">
+        <img class="off" src="frames/bear00006.jpg">
+        <img class="off" src="frames/bear00007.jpg">
+        <img class="off" src="frames/bear00008.jpg">
+        <img class="off" src="frames/bear00009.jpg">
+        <img class="off" src="frames/bear00010.jpg">
+        <img class="off" src="frames/bear00011.jpg">
+        <img class="off" src="frames/bear00012.jpg">
+        <img class="off" src="frames/bear00013.jpg">
+        <img class="off" src="frames/bear00014.jpg">
+        <img class="off" src="frames/bear00015.jpg">
+      </div>
+      <h4>Composite Bear</h4>
+      <div id="composite-image-display">
+        
+      </div>
+    </div>
+  </body>
+</html>
